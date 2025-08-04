@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" title="AWM Logo" class="logo">
+    <!-- كليمات مفتاحيه للبحث -->
+    <meta name="keywords" content="AWM, All Weather Mods, Minecraft, Server, IP, Port, Countdown, Rules, Information, Help, Admin, Owner, Mods, Plugins, Arabic, Minecraft Server, ماين كرافت سيرفر, ماين كرافت, سيرفر ماين كرافت, مودات ماين كرافت, بلوجنز ماين كرافت, قوانين ماين كرافت, معلومات ماين كرافت, مساعدة ماين كرافت, ادمن ماين كرافت, صاحب سيرفر ماين كرافت, مودات, بلوجنز, قوانين, معلومات, مساعدة, ادمن, صاحب سيرفر, ماين كرافت مودات, ماين كرافت بلوجنز, ماين كرافت قوانين, ماين كرافت معلومات, ماين كرافت مساعدة, ماين كرافت ادمن, ماين كرافت صاحب سيرفر, ماين كرافت مودات, ماين كرافت بلوجنز, ماين كرافت قوانين, ماين كرافت معلومات, ماين كرافت مساعدة, ماين كرافت ادمن, ماين كرافت صاحب سيرفر, ماين كرافت مودات, ماين كرافت بلوجنز, ماين كرافت قوانين, ماين كرافت معلومات, ماين كرافت مساعدة, ماين كرافت ادمن, ماين كرافت صاحب سيرفر, ماين كرافت مودات, ماين كرافت بلوجنز, ماين كرافت قوانين, ماين كرافت معلومات, ماين كرافت مساعدة, ماين كرافت ادمن, ماين كرافت صاحب سيرفر, ماين كرافت مودات, ماين كرافت بلوجنز, ماين كرافت قوانين, ماين كرافت معلومات, ماين كرافت مساعدة, ماين كرافت ادمن, ماين كرافت صاحب سيرفر, ماين كرافت مودات, ماين كرافت بلوجنز, ماين كرافت قوانين, ماين كرافت معلومات, ماين كرافت مساعدة, ماين كرافت ادمن, ماين كرافت صاحب سيرفر">
+    <meta name="description" content="𝓐𝓦𝓜 @ 𝓐𝓵𝓵 𝓦𝓮𝓪𝓽𝓱𝓮𝓻 𝓜𝓸𝓭𝓼 - سيرفر ماين كرافت للاجواء العصافيه">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="𝓐𝓦𝓜 @ 𝓐𝓵𝓵 𝓦𝓮𝓪𝓽𝓱𝓮𝓻 𝓜𝓸𝓭𝓼">
+    <title>𝓐𝓦𝓜 @ 𝓐𝓵𝓵 𝓦𝓮𝓪𝓽𝓱𝓮𝓻 𝓜𝓸𝓭𝓼 - سيرفر ماين كرافت لاجواء العصافيه</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>تقديم ادمن</h2>
+        <div class="form">
+            <form action="">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+<br>
+                <label for="reason">سبب التقديم:</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+                <br>
+                <label for="experience">الخبرة في ماين كرافت:</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea>
+                <br>
+                <label for="skills">المهارات الخاصة بك:</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+                <br>
+                <label for="availability">الوقت المتاح للتواجد في السيرفر:</label>
+                <input type="text" id="availability" name="availability" required>
+                <br>
+                <button type="submit">تقديم الطلب</button>
+            </form>
+            <h2>تقديم اكسس فتح السيرفر</h2>
+ <div class="access-requests">
+    <form>
+      <input type="text" id="access_name" placeholder="اسمك على Aternos" required>
+      <br>
+      <button type="submit">إرسال الطلب</button>
+    </form>
+
+    <h2>الطلبات المرسله لاكسس السيرفر :</h2>
+    <ul></ul>
+  </div>
+    </div>
+    <!-- جميع الطلبات التي تم ارسلها بعد الضغط على تقديم اكسس او تقديم طلب ادمن-->
+    <div class="requests">
+        <h2>الطلبات الادمن المرسلة</h2>
+        <ul>
+            <!-- سيتم عرض الطلبات هنا -->
+
+        </ul>
+    </div>
+<!-- طلبات الاكسس المرسله -->
+    <div class="footer">
+        <p>جميع الحقوق محفوظة &copy; 2025 𝓐𝓦𝓜 @ 𝓐𝓵𝓵 𝓦𝓮𝓪𝓽𝓱𝓮𝓻 𝓜𝓸𝓭𝓼</p>
+        <p>تم تصميم هذه الصفحة لتقديم طلبات الادمن وفتح السيرفر بسهولة</p>
+    </div>
+    <script>
+        // تأثير الزر عند الضغط
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 100);
+            });
+        });
+        // زر القائمه الرائيسيه والقائمه الخدمات
+        const nav = document.createElement('nav');
+        nav.innerHTML = `
+            <ul>
+                <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                <li><a href="services.html" title="الخدمات">الخدمات</a></li>
+            </ul>
+        `;
+        document.body.insertBefore(nav, document.body.firstChild);
+            // عرض الطلبات المرسلة
+        const requestsList = document.querySelector('.requests ul');
+        const requests = JSON.parse(localStorage.getItem('requests')) || [];
+        requests.forEach(request => {
+            const li = document.createElement('li');
+            li.textContent = `اسم: ${request.name}, سبب: ${request.reason}, خبرة: ${request.experience}, مهارات: ${request.skills}, وقت التواجد: ${request.availability}`;
+            requestsList.appendChild(li);
+        });
+        // حفظ الطلبات في التخزين المحلي عند تقديم الطلب
+        const form = document.querySelector('.form form');
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const reason = document.getElementById('reason').value;
+            const experience = document.getElementById('experience').value;
+            const skills = document.getElementById('skills').value
+            const availability = document.getElementById('availability').value;
+            const request = { name, reason, experience, skills, availability };
+            requests.push(request);
+            localStorage.setItem('requests', JSON.stringify(requests));
+            form.reset();
+            const li = document.createElement('li');
+            li.textContent = `اسم: ${name}, سبب: ${reason}, خبرة: ${experience}, مهارات: ${skills}, وقت التواجد: ${availability}`;
+            requestsList.appendChild(li);
+        });
+      // تحميل الطلبات من localStorage وعرضها
+    const accessRequestsList = document.querySelector('.access-requests ul');
+    const accessRequests = JSON.parse(localStorage.getItem('accessRequests')) || [];
+
+    accessRequests.forEach(accessRequest => {
+      const li = document.createElement('li');
+      li.textContent = `اسم: ${accessRequest.access_name}`;
+      accessRequestsList.appendChild(li);
+    });
+
+    // عند إرسال الطلب
+    const accessForm = document.querySelector('.access-requests form');
+    accessForm.addEventListener('submit', event => {
+      event.preventDefault();
+
+      const accessName = document.getElementById('access_name').value;
+      const accessRequest = { access_name: accessName };
+      accessRequests.push(accessRequest);
+      localStorage.setItem('accessRequests', JSON.stringify(accessRequests));
+
+      const li = document.createElement('li');
+      li.textContent = `اسم: ${accessName}`;
+      accessRequestsList.appendChild(li);
+
+      accessForm.reset();
+    });
+    // 
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.1s ease-in-out;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        .requests {
+            margin-top: 20px;
+        }
+        .requests ul {
+            list-style: none;
+            padding: 0;
+        }
+        .requests li {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</body>
+</html>
