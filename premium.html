@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="shortcut icon" href="premium.png" type="image/x-icon">
   <meta charset="UTF-8">
-  <title>Shop - Claim & Ranks</title>
+  <title>Premium Shop</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -13,15 +14,16 @@
     }
 
     .shop-container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     .shop-title {
       text-align: center;
-      font-size: 32px;
+      font-size: 38px;
       margin-bottom: 40px;
       color: gold;
+      text-shadow: 0 0 10px gold;
     }
 
     .shop-item {
@@ -54,64 +56,98 @@
       font-size: 18px;
       color: #ccc;
     }
+
+    .premium-badge {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+
+    .premium-badge:hover {
+      background-color: #ffc400;
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
 
-  <div class="shop-container">
-    <div class="shop-title">🏪 Claim & Ranks Shop</div>
+  <button class="premium-badge" onclick="window.open('index.html')">Go Back</button>
 
-    <!-- Claim Purchase -->
+  <div class="shop-container">
+    <div class="shop-title">🏪 Premium Claim & Ranks Shop</div>
+
+    <!-- Claim -->
     <div class="shop-item">
       <div class="item-title">🎯 50 Claim Blocks</div>
-      <div class="item-description">
-        احصل على 50 بلوك Claim لحماية أرضك.
-      </div>
-      <div class="item-price">
-        💰 السعر: 6 Stacks من Gold Ingots <br>
-        أو 30 جنيه مصري
-      </div>
+      <div class="item-description">احصل على 50 بلوك Claim لحماية أرضك.</div>
+      <div class="item-price">💰 6 Stacks Gold Ingots أو 30 جنيه</div>
     </div>
 
-    <!-- Rank 1 -->
+    <!-- MEMBER+ -->
     <div class="shop-item">
-      <div class="item-title">⭐ VIP Rank</div>
+      <div class="item-title">🟢 MEMBER+ Rank</div>
       <div class="item-description">
-        - اسم ملون في الشات<br>
-        - دخول للسيرفر ممتلئ<br>
-        - أدوات ترحيب خاصة
+        - لون مميز في الشات<br>
+        - /hat و /tpa<br>
+        - دخول VIP Zone
       </div>
-      <div class="item-price">💰 السعر: 60 جنيه</div>
+      <div class="item-price">💰 35 جنيه</div>
     </div>
 
-    <!-- Rank 2 -->
+    <!-- MVP -->
     <div class="shop-item">
-      <div class="item-title">💎 ELITE Rank</div>
+      <div class="item-title">🔵 MVP Rank</div>
       <div class="item-description">
-        - جميع مميزات VIP<br>
-        - سرعة مشي إضافية<br>
-        - خريطة خاصة /kit elite<br>
-        - استخدام /nick لتغيير اسمك
+        - كل مميزات MEMBER+<br>
+        - كتابة ملونة في الشات<br>
+        - /nick + أدوات /kit mvp
       </div>
-      <div class="item-price">💰 السعر: 120 جنيه</div>
+      <div class="item-price">💰 80 جنيه</div>
     </div>
 
-    <!-- Rank 3 -->
+    <!-- MVP+ -->
     <div class="shop-item">
-      <div class="item-title">🔥 LEGENDARY Rank</div>
+      <div class="item-title">🟣 MVP+ Rank</div>
       <div class="item-description">
-        - كل مميزات ELITE<br>
-        - إمكانية الطيران في اللوبي<br>
-        - /fly في مناطقك<br>
-        - أدوات مميزة جداً<br>
-        - إشارة خاصة في الشات 🎮
+        - جميع مميزات MVP<br>
+        - /setwarp خاص<br>
+        - سرعة مشي + أدوات ألماس
       </div>
-      <div class="item-price">💰 السعر: 200 جنيه</div>
+      <div class="item-price">💰 150 جنيه</div>
+    </div>
+
+    <!-- CHAMPION -->
+    <div class="shop-item">
+      <div class="item-title">🟡 CHAMPION Rank</div>
+      <div class="item-description">
+        - كل مميزات MVP+<br>
+        - /fly في اللوبي<br>
+        - تأثيرات Particle + أدوات قوية
+      </div>
+      <div class="item-price">💰 250 جنيه</div>
+    </div>
+
+    <!-- OVERLORD -->
+    <div class="shop-item">
+      <div class="item-title">🔴 OVERLORD Rank</div>
+      <div class="item-description">
+        - كل مميزات CHAMPION<br>
+        - أدوات Netherite Enchanted<br>
+        - صلاحيات متقدمة + دعم خاص
+      </div>
+      <div class="item-price">💰 400 جنيه</div>
     </div>
 
   </div>
-
 </body>
-</html>
-
 </html>
