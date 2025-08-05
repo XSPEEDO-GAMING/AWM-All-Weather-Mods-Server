@@ -31,14 +31,14 @@
                 <label for="availability">الوقت المتاح للتواجد في السيرفر:</label>
                 <input type="text" id="availability" name="availability" required>
                 <br>
-                <button type="submit">تقديم الطلب</button>
+                <button type="submit" onclick="alert('تم ارسال الطلب بنجاح \nتنبيه ارسل لقطة شاشه على الجروب لتاكيد الطلب')">تقديم الطلب</button>
             </form>
             <h2>تقديم اكسس فتح السيرفر</h2>
  <div class="access-requests">
     <form>
       <input type="text" id="access_name" placeholder="اسمك على Aternos" required>
       <br>
-      <button type="submit">إرسال الطلب</button>
+      <button type="submit" onclick="alert('تم ارسال الطلب بنجاح \nتنبيه ارسل لقطة شاشه على الجروب لتاكيد الطلب')">إرسال الطلب</button>
     </form>
 
     <h2>الطلبات المرسله لاكسس السيرفر :</h2>
@@ -199,8 +199,8 @@
             text-align: center;
             margin-top: 20px;
             padding: 10px;
-            background-color: #f0f0f0;
-            color: black;
+            background-color: #4CAF50;
+            color: white;
         }
         nav {
             background-color: #333;
@@ -225,9 +225,44 @@
         nav a:hover {
             background-color: #555;
         }
+        /* تناسق كل الستايلات مع الهواتف والبيسي واللاب توب والتابلت */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            nav li {
+                display: block;
+                margin-bottom: 5px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+            nav li {
+                display: inline-block;
+                margin-right: 5px;
+            }
+            button {
+                width: auto;
+            }
+        }
+        @media (min-width: 1025px) {
+            .container {
+                padding: 20px;
+            }
+            nav li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            button {
+                width: auto;
+            }
+        }
+    
     </style>
 </body>
-
 </html>
-
-
