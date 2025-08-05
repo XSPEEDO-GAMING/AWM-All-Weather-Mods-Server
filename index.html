@@ -16,64 +16,6 @@
 <body>
 
 <header>
-        <!-- عداد تنازالي من اليوم الى 5 اغسطس -->
-        <div class="countdown">
-            <p>العد التنازلي لإطلاق السيرفر: <span id="countdown"></span></p>
-        </div>
-        <script>
-            // عداد تنازلي
-            const countdownDate = new Date("August 5, 2025 22:30:00").getTime();
-            const countdownElement = document.getElementById("countdown");
-
-            setInterval(() => {
-                const now = new Date().getTime();
-                const distance = countdownDate - now;
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                countdownElement.innerHTML = `${days} يوم ${hours} ساعة ${minutes} دقيقة ${seconds} ثانية`;
-
-                if (distance < 0) {
-                    clearInterval(this);
-                    countdownElement.innerHTML = "السيرفر مفتوح الآن";
-                    // تغيير النص الى السيرفر مفتوح الآن
-                    countdownElement.style.color = 'green'; // تغيير لون النص الى الأخضر
-                    countdownElement.style.fontSize = '24px'; // تكبير حجم الخط
-                    countdownElement.style.fontWeight = 'bold'; // جعل الخط عريض
-                    countdownElement.style.textAlign = 'center'; // محاذاة النص في المنتصف
-                    countdownElement.innerHTML = "السيرفر مفتوح الآن";
-                    //اظهار الايبي والport الحقيقي بعد اطلاق السيرفر
-                    document.getElementById("ip").innerText = "All-Weather-Mods.aternos.me";
-                    document.getElementById("port").innerText = "48489";
-                    // تغيير لون الزر الخاص بنسخ الايبي والport الى اللون الأخضر
-                    const copyButtons = document.querySelectorAll('.copy-button');
-                    copyButtons.forEach(button => {
-                        button.style.backgroundColor = 'green';
-                        button.style.color = 'white';
-                        button.disabled = false; // تمكين الأزرار بعد إطلاق السيرفر
-                        // اظهار انفجار خفيف على الزر النسخ عند الضغط عليه
-                        button.addEventListener('click', () => {
-                            button.style.transform = 'scale(0.9)';
-                            setTimeout(() => {
-                                button.style.transform = 'scale(1)';
-                                //صنع انفجار قوي عند انتهاء المده المطلوبة
-                                const explosion = document.createElement('div');
-                                explosion.classList.add('explosion');
-                                button.appendChild(explosion);
-                                setTimeout(() => {
-                                    explosion.remove();
-                                }, 100);
-                            }, 100);
-                        });
-                        
-                    });
-                }
-            }, 1000);
-           
-        </script>
         <!-- زر القائمه الرائيسيه والقائمه الخدمات -->
         <nav>
             <ul>
@@ -92,7 +34,7 @@
          <!-- زر نسخ port -->
         <button class="copy-button" onclick="copyPort()" title="نسخ Port">نسخ Port</button>
         <!-- عرض الip والport -->
-        <p class="ip-port" title="IP و Port">IP: <span id="ip">! قريباً عند اطلاق السيرفر</span> | Port: <span id="port">! قريباً عند اطلاق السيرفر</span></p>
+        <p class="ip-port" title="IP و Port">IP: <span id="ip">All-Weather-Mods.aternos.me</span> | Port: <span id="port">48489</span></p>
 </header>
     <!-- القوانين والمعلومات -->
     <main>
@@ -272,7 +214,7 @@ window.onload = function() {
     .copy-button {
         padding: 10px 20px;
         margin: 10px;
-        background-color: #007bff;
+        background-color: green;
         color: white;
         border: none;
         border-radius: 5px;
@@ -285,7 +227,7 @@ window.onload = function() {
 
     .ip-port {
         font-size: 1.2em;
-        color: #333;
+        color: black;
                 /* Bold */
         font-weight: bold;
                 min-width: none;
@@ -658,4 +600,5 @@ window.onload = function() {
     }
 </style>
 </body>
+
 </html>
